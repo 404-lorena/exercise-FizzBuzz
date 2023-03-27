@@ -9,11 +9,11 @@ public class Main {
 
         int number = scanner.nextInt();
 
-        if (number % 5 == 0 && number % 3 == 0){
-            System.out.println("FizzBuzzBuzz");
-        }
-        else if(number % 5 == 0){
-            System.out.println("Fizz");
+        if (number % 5 == 0){
+            if(number % 3 == 0)
+                System.out.println("FizzBuzz");
+            else
+                System.out.println("Fizz");
         }
         else if(number % 3 == 0){
             System.out.println("Buzz");
